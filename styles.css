@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://unpkg.com.bootstrap@4.4.1/dist/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 * {
   box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    position: relative;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  position: relative;
+  font-family: "EB Garamond", serif;
 }
 
 main {
@@ -48,33 +51,33 @@ header {
 }
 
 .takeover {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0, 0.6);
-    position: absolute;
-    z-index: 2;
-    display: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 2;
+  display: none;
 }
 
 .stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-  }
+  height: 100%;
+  overflow: hidden;
+}
 
 .carousel_image {
-    height: 80vh;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+  height: 80vh;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
 }
 
 .exit {
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    color: white;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: white;
 }
 
 .continue {
@@ -88,18 +91,21 @@ header {
 }
 
 .scroll-down {
-    position: absolute;
-    bottom: 0;
-    color: white;
+  position: absolute;
+  bottom: 0;
+  color: white;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 i {
   margin-top: 10px;
   font-size: 36px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 i:hover {
@@ -113,9 +119,9 @@ span {
 }
 
 .summary {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -123,20 +129,21 @@ span {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .thumbnail {
-    border-radius: 4px;  /* Rounded border */
-    padding: 5px; /* Some padding */
-    height: 120px;
-    margin: 0 5px;
+  border-radius: 4px; /* Rounded border */
+  padding: 5px; /* Some padding */
+  height: 120px;
+  margin: 0 5px;
 }
-  
-  /* Add a hover effect (blue shadow) */
+
+/* Add a hover effect (blue shadow) */
 .thumbnail:hover {
-    border: 1px solid #ddd; /* Gray border */
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    cursor: pointer;
+  border: 1px solid #ddd; /* Gray border */
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
 }
 
 .timeline::after {
@@ -192,9 +199,9 @@ span {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #5B0F00;
+  border: medium solid #5b0f00;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #5B0F00;
+  border-color: transparent transparent transparent #5b0f00;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -206,9 +213,9 @@ span {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #5B0F00;
+  border: medium solid #5b0f00;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #5B0F00 transparent transparent;
+  border-color: transparent #5b0f00 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -219,11 +226,22 @@ span {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: #5B0F00;
+  background-color: #5b0f00;
+  font-family: "EB Garamond", serif;
   position: relative;
   color: white;
   border-radius: 6px;
-  box-shadow: 2px 2px 8px 2px rgba(255, 255, 255, 0.5)
+  box-shadow: 2px 2px 8px 2px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  background-color: #5b0f00;
+  font-family: "EB Garamond", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
 }
 
 @media (max-width: 1024px) {
@@ -235,7 +253,7 @@ span {
   }
 
   .thumbnail {
-      height: 80px;
+    height: 80px;
   }
 
   span {
@@ -244,8 +262,8 @@ span {
   }
 
   .summary {
-      margin-bottom: 0;
-      height: auto;
+    margin-bottom: 0;
+    height: auto;
   }
 
   .timeline::after {
