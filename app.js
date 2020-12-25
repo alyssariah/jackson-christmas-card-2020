@@ -2,6 +2,10 @@ function windowScroll() {
     document.getElementById('summary').scrollIntoView({behavior: 'smooth'})
 }
 
+function showTimeline() {
+    document.getElementById('timeline').scrollIntoView({behavior: 'smooth'})
+}
+
 function showTakeover(source) {
     document.getElementById("image").src = source;
     document.getElementById("takeover").style.top = `${window.scrollY}px`;
