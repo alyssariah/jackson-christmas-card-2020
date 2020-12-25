@@ -3,9 +3,9 @@ function windowScroll() {
 }
 
 function showTakeover(source) {
+    document.getElementById("image").src = source;
     document.getElementById("takeover").style.top = `${window.scrollY}px`;
     document.getElementById("takeover").style.display = 'flex';
-    document.getElementById("image").src = source;
     disableScroll()
 }
 
