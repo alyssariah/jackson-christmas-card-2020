@@ -119,10 +119,28 @@ span {
 }
 
 .summary {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  position: relative;
+  background-color: #434343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.summary_image {
+    width: 90vw;
+    box-shadow: 2px 2px 8px 2px rgba(255, 255, 255, 0.5);
+}
+
+.happy_holidays {
+    width: 20vw;
+}
+
+.text {
+    display: none;
+}
+
+
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -142,7 +160,6 @@ span {
 /* Add a hover effect (blue shadow) */
 .thumbnail:hover {
   border: 1px solid #ddd; /* Gray border */
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   cursor: pointer;
 }
 
@@ -238,10 +255,48 @@ footer {
   background-color: #5b0f00;
   font-family: "EB Garamond", serif;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   color: white;
+}
+
+footer span {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .summary_image {
+        display: none;
+    }
+  
+   .happy_holidays {
+      width: 75vw;
+      height: auto;
+   }
+  
+   .text {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       height: 100vh;
+       padding: 40px;
+       font-size: 0.8rem;
+       background-color: black;
+       color: white;
+       overflow: scroll;
+   }
+
+   .carousel_image {
+        width: 80vw;
+        height: auto;
+   }
+   footer {
+       flex-direction: column;
+   }
+    
 }
 
 @media (max-width: 1024px) {
@@ -263,8 +318,8 @@ footer {
 
   .summary {
     margin-bottom: 0;
-    height: auto;
   }
+
 
   .timeline::after {
     left: 31px;

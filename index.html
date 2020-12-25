@@ -21,8 +21,27 @@
         </div>
     </header>
     <div class="summary" id="summary">
-        <img src="images/2020 Recap.svg" />
-         <i class="fas fa-chevron-down scroll-down" onclick="windowScroll()"></i>
+            <img class="summary_image" src="images/2020 Recap.svg">
+            <div class="text">
+                <img class="happy_holidays" src="images/happy_holidays.png" />
+                <p>2020 has been a big year for us! When we went for a weekend getaway to Redwoods National Park in January,
+                    we could scarcely imagine how much change was on the horizon. In April, Brian’s PhD advisor at Stanford
+                    decided to accept a faculty position in the Robotics Institute at Carnegie Mellon University, and we
+                    decided to follow! In the middle of the global pandemic, we moved across the country to Pittsburgh,
+                    Pennsylvania, seeing family and several more National Parks along the way. After graduating as Suma Cum
+                    Laude from Arizona State University last December, Alyssa decided to change career paths and enrolled in
+                    a coding bootcamp from General Assembly, and now works for SAE International (headquartered in the
+                    Pittsburgh area) as a front-end web developer. To round out a crazy year, Alyssa finally got the puppy
+                    she’s been wanting since we got married. River is a fiesty Golden Irish who’s added a bit more joy (and
+                    stress) to our daily routines.
+                    <br/>
+                    <br/>
+                    We’re incredibly grateful for the many blessings we experienced this year. We’re also saddened by the
+                    stories of so many others for whom 2020 has been incredibly challenging. Although we are far from most
+                    of you, our hearts go out to all of you. May Christmas, the New Year, and 2021 bring you a renewed sense
+                    of hope, a love for others, and unexpected opportunities, as 2020 did for us.
+                </p>
+            </div>
     </div>
     <div class="takeover" id="takeover" onclick="hideTakeover()">
         <a title="close" class="exit">
@@ -126,7 +145,8 @@
                     <img class="thumbnail" onclick="showTakeover('images/yosemite_selfie.jpg')"
                         src="images/yosemite_selfie.jpg" />
                     <img class="thumbnail" onclick="showTakeover('images/warm.jpg')" src="images/warm.jpg" />
-                    <img class="thumbnail" onclick="showTakeover('images/beautiful.jpeg')" src="images/beautiful.jpeg" />
+                    <img class="thumbnail" onclick="showTakeover('images/beautiful.jpeg')"
+                        src="images/beautiful.jpeg" />
                     <img class="thumbnail" onclick="showTakeover('images/daydreaming.jpg')"
                         src="images/daydreaming.jpg" />
                 </div>
@@ -219,7 +239,9 @@
         </div>
     </main>
     <footer>
-        &copy; Alyssa Jackson
+        <span>983 Becks Run Rd, Pittsburgh, PA 15210</span>
+        <span>&copy; Alyssa Jackson</span>
+        <span>Brian: (512)809-5246 &nbsp; Alyssa: (520)561-3172</span>
     </footer>
     <script src="app.js"></script>
 </body>
